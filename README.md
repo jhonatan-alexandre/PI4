@@ -16,7 +16,7 @@ Se `.\PI4` não existir depois do `Set-Location`, ajuste o valor de `$repoPath` 
 
 ```powershell
 $git = "C:\Program Files\Git\cmd\git.exe"
-$repoPath = "C:\caminho\para\o\clone\PI4"
+$repoPath = "C:\caminho\para\uma-pasta-com-README-e-subpasta-PI4"
 
 Set-Location $repoPath
 Set-Content -Path ".\PI4\exemplo.txt" -Value "arquivo de teste"
