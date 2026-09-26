@@ -32,7 +32,7 @@ Set-Content -Path ".\PI4\exemplo.txt" -Value "arquivo de teste"
 
 ## Saída esperada
 
-Depois de criar o arquivo de teste acima, a saída esperada é:
+Assumindo que o repositório já estava limpo antes de criar o arquivo de teste acima, a saída esperada é:
 
 ```text
 A  PI4/exemplo.txt
