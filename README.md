@@ -10,7 +10,7 @@ Este repositório pode ser usado para demonstrar um fluxo simples de `git add` e
 
 ## Fluxo para compartilhar com colegas
 
-Cada colega deve adaptar o valor de `$repoPath` para o local onde clonou este repositório.
+Cada colega deve adaptar o valor de `$repoPath` para a raiz local clonada deste repositório, onde ficam o arquivo `README.md` e a pasta `PI4`.
 
 ```powershell
 $git = "C:\Program Files\Git\cmd\git.exe"
