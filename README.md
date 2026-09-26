@@ -6,15 +6,17 @@ Este repositório pode ser usado para demonstrar um fluxo simples de `git add` e
 
 - Git for Windows instalado
 - Uma cópia local deste repositório no computador de cada pessoa
-- Ajustar o caminho local do repositório antes de executar o fluxo
+- Ajustar o caminho da raiz local do repositório antes de executar o fluxo
 
 ## Fluxo para compartilhar com colegas
 
-Cada colega deve adaptar o valor de `$repoPath` para a raiz local clonada deste repositório. Em outras palavras, é a pasta principal do clone, e a pasta `PI4` fica dentro dela como subdiretório rastreado.
+Cada colega deve adaptar o valor de `$repoPath` para a raiz local deste repositório, isto é, a pasta que contém este `README.md`. Antes de continuar, confirme que a subpasta `PI4` existe dentro desse caminho.
+
+Se `.\PI4` não existir depois do `Set-Location`, ajuste o valor de `$repoPath` antes de continuar.
 
 ```powershell
 $git = "C:\Program Files\Git\cmd\git.exe"
-$repoPath = "C:\caminho\para\o\repositorio"
+$repoPath = "C:\caminho\para\o\clone\PI4"
 
 Set-Location $repoPath
 Set-Content -Path ".\PI4\exemplo.txt" -Value "arquivo de teste"
@@ -25,7 +27,7 @@ Set-Content -Path ".\PI4\exemplo.txt" -Value "arquivo de teste"
 
 ## O que o comando faz
 
-1. Entra na pasta raiz local do repositório
+1. Entra na raiz local do repositório
 2. Cria um arquivo de teste não rastreado dentro da pasta `PI4`
 3. Adiciona a pasta `PI4` ao índice do Git
 4. Exibe o status resumido para confirmar o resultado
