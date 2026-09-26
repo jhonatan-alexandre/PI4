@@ -38,4 +38,4 @@ Depois de criar o arquivo de teste acima, a saída esperada é:
 A  PI4/exemplo.txt
 ```
 
-Se nada tiver mudado desde a última adição ou commit, o `git status --short` pode não exibir nenhuma linha.
+Se quiser repetir a demonstração do zero, remova ou limpe o arquivo `PI4/exemplo.txt` antes de executar o fluxo novamente.
