@@ -34,7 +34,7 @@ Set-Content -Path ".\PI4\exemplo.txt" -Value "arquivo de teste"
 
 ## Saída esperada
 
-Assumindo que o repositório já estava limpo antes de criar o arquivo de teste acima, a saída esperada é:
+Assumindo que o repositório já estava limpo antes de criar o arquivo de teste acima e que a pasta `PI4` já está rastreada por causa do arquivo versionado `PI4/README.md`, a saída esperada é:
 
 ```text
 A  PI4/exemplo.txt
