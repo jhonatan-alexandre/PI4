@@ -1,0 +1,15 @@
+{
+  "model": "lstm_full_mse",
+  "fold": "fold2",
+  "score_kwh": 0.22468817687498702,
+  "seconds": 71.10835629998473,
+  "parameters": {
+    "name": "lstm_full_mse",
+    "units": 32,
+    "dropout": 0.1,
+    "learning_rate": 0.001,
+    "loss": "mse"
+  },
+  "best_epoch": 8,
+  "parameter_count": 17123
+}

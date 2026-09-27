@@ -1,0 +1,101 @@
+{
+  "seed": 42,
+  "epochs_limit": 25,
+  "lookback_minutes": 120,
+  "sequence_bin_minutes": 5,
+  "train_stride": 15,
+  "evaluation_stride": 5,
+  "neural_days": 365,
+  "reference_rows": 200000,
+  "objective": "equal-horizon mean RMSE / horizon_hours, validation only",
+  "context_columns": [
+    "Global_active_power",
+    "Global_reactive_power",
+    "Voltage",
+    "Global_intensity",
+    "Sub_metering_1",
+    "Sub_metering_2",
+    "Sub_metering_3",
+    "power_mean_5m",
+    "power_mean_15m",
+    "power_mean_30m",
+    "power_mean_60m",
+    "power_mean_120m",
+    "power_std_15m",
+    "power_std_60m",
+    "power_min_60m",
+    "power_max_60m",
+    "power_lag_5m",
+    "power_lag_15m",
+    "power_lag_1440m",
+    "power_lag_10080m",
+    "seasonal_day_15min",
+    "seasonal_day_30min",
+    "seasonal_day_1h",
+    "seasonal_week_15min",
+    "seasonal_week_30min",
+    "seasonal_week_1h",
+    "hour_sin",
+    "hour_cos",
+    "weekday_sin",
+    "weekday_cos",
+    "year_sin",
+    "year_cos",
+    "weekend",
+    "unmetered_power_kw"
+  ],
+  "partitions": {
+    "train": {
+      "rows": 2015259,
+      "start": "2006-12-16 17:24:00",
+      "end": "2010-10-16 05:02:00"
+    },
+    "validation": {
+      "rows": 30000,
+      "start": "2010-10-16 05:03:00",
+      "end": "2010-11-06 01:02:00"
+    },
+    "test": {
+      "rows": 30000,
+      "start": "2010-11-06 01:03:00",
+      "end": "2010-11-26 21:02:00"
+    }
+  },
+  "sample_counts": {
+    "full_train": 131804,
+    "neural_train": 33681,
+    "validation": 5929,
+    "test": 5965
+  },
+  "versions": {
+    "tensorflow": "2.19.1",
+    "numpy": "2.1.3",
+    "pandas": "3.0.6",
+    "sklearn": "1.9.1"
+  },
+  "raw_file_bytes": 128862195,
+  "legacy_provenance": {
+    "captured_at_utc": "2026-09-27T03:10:16.008817+00:00",
+    "source": "C:\\Users\\jhona\\Documents\\Jhonatan\\Ci\u00eancia de Dados\\PI4\\outputs\\models",
+    "artifacts": {
+      "lstm_energy_forecaster.keras": {
+        "sha256": "dd14e12a850eb3f51ed299ff40ae0e97fbabd34deee52f27f726847f7ccc0bae"
+      },
+      "feature_scaler.joblib": {
+        "sha256": "a541b6ffbb54aa3e833ec458e901d6876908172e699964eb80c3b972a6fa907b",
+        "samples_seen": 140000.0,
+        "features": 7
+      },
+      "energy_target_scaler.joblib": {
+        "sha256": "c72895f01a2420571f1aa2023358cd98a74b373be39e88ffaec273bded6607fa",
+        "samples_seen": 27965.0,
+        "features": 3
+      }
+    },
+    "status": "available",
+    "capture_stage": "after_completed_run",
+    "verification": "Recomputed legacy MAE/RMSE/R2 match pre-existing outputs/metrics/test_metrics.csv within rtol=1e-5 and atol=1e-7."
+  },
+  "raw_file_sha256": "d8c4a0f4d6a47358c79f1670c78013d494d20db8f64a308bd5fd69290ead3498",
+  "post_run_changes": "Added immutable baseline snapshots, corrected missingness reporting and added the report; trained models and predictions unchanged."
+}

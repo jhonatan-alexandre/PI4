@@ -1,0 +1,15 @@
+{
+  "model": "lstm_full_huber",
+  "fold": "fold2",
+  "score_kwh": 0.21489925235230148,
+  "seconds": 214.38919570000144,
+  "parameters": {
+    "name": "lstm_full_huber",
+    "units": 64,
+    "dropout": 0.15,
+    "learning_rate": 0.001,
+    "loss": "huber"
+  },
+  "best_epoch": 20,
+  "parameter_count": 33507
+}

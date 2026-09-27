@@ -1,0 +1,22 @@
+{
+  "captured_at_utc": "2026-09-27T03:10:16.008817+00:00",
+  "source": "C:\\Users\\jhona\\Documents\\Jhonatan\\Ci\u00eancia de Dados\\PI4\\outputs\\models",
+  "artifacts": {
+    "lstm_energy_forecaster.keras": {
+      "sha256": "dd14e12a850eb3f51ed299ff40ae0e97fbabd34deee52f27f726847f7ccc0bae"
+    },
+    "feature_scaler.joblib": {
+      "sha256": "a541b6ffbb54aa3e833ec458e901d6876908172e699964eb80c3b972a6fa907b",
+      "samples_seen": 140000.0,
+      "features": 7
+    },
+    "energy_target_scaler.joblib": {
+      "sha256": "c72895f01a2420571f1aa2023358cd98a74b373be39e88ffaec273bded6607fa",
+      "samples_seen": 27965.0,
+      "features": 3
+    }
+  },
+  "status": "available",
+  "capture_stage": "after_completed_run",
+  "verification": "Recomputed legacy MAE/RMSE/R2 match pre-existing outputs/metrics/test_metrics.csv within rtol=1e-5 and atol=1e-7."
+}

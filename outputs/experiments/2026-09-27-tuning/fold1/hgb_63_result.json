@@ -1,0 +1,16 @@
+{
+  "model": "hgb_63",
+  "fold": "fold1",
+  "score_kwh": 0.19967981555244543,
+  "seconds": 25.222780699958093,
+  "parameters": {
+    "name": "hgb_63",
+    "max_iter": 400,
+    "max_leaf_nodes": 63,
+    "learning_rate": 0.05,
+    "min_samples_leaf": 100,
+    "l2_regularization": 20.0,
+    "loss": "squared_error",
+    "enhanced": true
+  }
+}

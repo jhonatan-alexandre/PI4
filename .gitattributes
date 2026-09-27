@@ -1,0 +1,7 @@
+# Preserve exact archived bytes; do not normalize line endings.
+* -text
+*.png binary
+*.keras binary
+*.joblib binary
+*.npy binary
+*.rtf binary

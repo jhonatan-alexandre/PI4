@@ -1,0 +1,38 @@
+{
+  "winner": "hgb_full",
+  "best_neural": "lstm_features",
+  "candidates": {
+    "persistence_5min": {
+      "score": 0.5904021723867519,
+      "kind": "baseline"
+    },
+    "hgb_30days": {
+      "score": 0.5095920394527672,
+      "kind": "hgb"
+    },
+    "hgb_original": {
+      "score": 0.47872389521097175,
+      "kind": "hgb"
+    },
+    "hgb_365days": {
+      "score": 0.4376769255915682,
+      "kind": "hgb"
+    },
+    "hgb_full": {
+      "score": 0.4320011569866317,
+      "kind": "hgb"
+    },
+    "lstm_raw": {
+      "score": 0.4780925412972768,
+      "kind": "neural"
+    },
+    "lstm_features": {
+      "score": 0.46837936838467914,
+      "kind": "neural"
+    },
+    "lstm_features_pca": {
+      "score": 0.469001183907191,
+      "kind": "neural"
+    }
+  }
+}

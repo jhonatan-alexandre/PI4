@@ -1,0 +1,13 @@
+{
+  "python": "3.12.6",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "version_tag": "v1.0-relatorio",
+  "source_scope": "PI4 only",
+  "raw_dataset_sha256": "d8c4a0f4d6a47358c79f1670c78013d494d20db8f64a308bd5fd69290ead3498",
+  "excluded": [
+    ".venv",
+    "raw/processed data",
+    "prepared_samples.joblib",
+    "unrelated personal documents"
+  ]
+}

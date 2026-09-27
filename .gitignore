@@ -1,0 +1,17 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+.env.*
+data/raw/
+data/processed/
+entrega/
+**/prepared_samples.joblib
+outputs/*
+!outputs/experiments/
+outputs/experiments/*
+!outputs/experiments/2026-09-26/
+!outputs/experiments/2026-09-27-tuning/
+!outputs/models/
+!outputs/metrics/
+!outputs/figures/

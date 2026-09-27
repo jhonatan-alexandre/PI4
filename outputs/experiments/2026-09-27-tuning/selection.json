@@ -1,0 +1,22 @@
+{
+  "winner": "ensemble",
+  "best_tree": "hgb_regularized",
+  "best_neural": "lstm_full_huber",
+  "tree_weight": 0.5,
+  "mean_validation_scores": {
+    "hgb_reference": 0.20990788588641693,
+    "hgb_31": 0.20634632624631916,
+    "hgb_regularized": 0.20598494497556968,
+    "hgb_63": 0.2067713077049829,
+    "hgb_mae": 0.20961562738401346,
+    "lstm_full_mse": 0.21704769375719266,
+    "lstm_full_huber": 0.21048773789153985,
+    "lstm_full_mixed": 0.2121595882548031
+  },
+  "blend_scores": {
+    "0.25": 0.20553369698897897,
+    "0.5": 0.20311345711779993,
+    "0.75": 0.2032824673710933
+  },
+  "protocol": "two chronological folds, selection before test; refit including validation"
+}

@@ -1,0 +1,139 @@
+{
+  "search": {
+    "epochs": 35,
+    "stride": 30,
+    "seed": 42,
+    "reference": "C:\\Users\\jhona\\Documents\\Jhonatan\\Ci\u00eancia de Dados\\PI4\\outputs\\experiments\\2026-09-26",
+    "trees": [
+      {
+        "name": "hgb_reference",
+        "max_iter": 200,
+        "max_leaf_nodes": 15,
+        "learning_rate": 0.08,
+        "min_samples_leaf": 40,
+        "l2_regularization": 5.0,
+        "loss": "squared_error",
+        "enhanced": false
+      },
+      {
+        "name": "hgb_31",
+        "max_iter": 400,
+        "max_leaf_nodes": 31,
+        "learning_rate": 0.05,
+        "min_samples_leaf": 60,
+        "l2_regularization": 10.0,
+        "loss": "squared_error",
+        "enhanced": true
+      },
+      {
+        "name": "hgb_regularized",
+        "max_iter": 600,
+        "max_leaf_nodes": 31,
+        "learning_rate": 0.04,
+        "min_samples_leaf": 100,
+        "l2_regularization": 20.0,
+        "loss": "squared_error",
+        "enhanced": true
+      },
+      {
+        "name": "hgb_63",
+        "max_iter": 400,
+        "max_leaf_nodes": 63,
+        "learning_rate": 0.05,
+        "min_samples_leaf": 100,
+        "l2_regularization": 20.0,
+        "loss": "squared_error",
+        "enhanced": true
+      },
+      {
+        "name": "hgb_mae",
+        "max_iter": 300,
+        "max_leaf_nodes": 31,
+        "learning_rate": 0.06,
+        "min_samples_leaf": 100,
+        "l2_regularization": 10.0,
+        "loss": "absolute_error",
+        "enhanced": true
+      }
+    ],
+    "networks": [
+      {
+        "name": "lstm_full_mse",
+        "units": 32,
+        "dropout": 0.1,
+        "learning_rate": 0.001,
+        "loss": "mse"
+      },
+      {
+        "name": "lstm_full_huber",
+        "units": 64,
+        "dropout": 0.15,
+        "learning_rate": 0.001,
+        "loss": "huber"
+      },
+      {
+        "name": "lstm_full_mixed",
+        "units": 32,
+        "dropout": 0.1,
+        "learning_rate": 0.0007,
+        "loss": "mixed"
+      }
+    ]
+  },
+  "objective": "mean_horizons(0.5*MAE_kWh + 0.5*RMSE_kWh)",
+  "test_status": "previously inspected historical benchmark; not a fresh holdout",
+  "raw_sha256": "d8c4a0f4d6a47358c79f1670c78013d494d20db8f64a308bd5fd69290ead3498",
+  "reference_sha256": {
+    "test_predictions.csv": "d34ea59e6631e551c23577adc4f552560b21f7144760b9f35536dca843ebe8e4",
+    "test_metrics.csv": "f25e8861b527cd944fb361adaaa50810a56e08bcc264b490f8af7c46c93a0a21",
+    "hgb_full.joblib": "34c530a3e36d1584cecf1a51c0f8dd69ba9cc50ee33b44e953b98f77625bd3d1",
+    "lstm_features.keras": "6762147929dec866535a62989d9737b7b38bfdfa18ca7c205b3834fe8c1d1f76",
+    "lstm_features_transforms.joblib": "5c32ec0919eaa4494bbf12d20c1996eafb382687049166878ba4c62c5ca18be3"
+  },
+  "code_sha256": {
+    "tune.py": "6a755fbac25e4842e4b5fbd78b2db1e6268ab1c5d26cda88ee464edd36e320b7",
+    "src\\__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src\\config.py": "6a708685d595019a4fbcc199df55a9b74076401bb451105397eab01d760b12e4",
+    "src\\data_loader.py": "ac2083d17cd650bdf9f7a061b289581a16cd91530d1cc8d13a6241a17ebc18a9",
+    "src\\diagnostics.py": "73013bba27c18e503956ed2da2669ecf3c8ecb14d3c2eaa7cb4cd04ba2edfb60",
+    "src\\evaluate.py": "924054335e518787400b46980da0aa6eff6e73334573fd54087b599af6acfe77",
+    "src\\experiments.py": "77f4a944320a9654911f90476a3b3236f35377da4c3728b344bd4e3af1ee2e0f",
+    "src\\features.py": "e2112cbe32b6d30e2f69fc770bdeb2902f7a49d6ea6a4201060ace73ef3e0e7f",
+    "src\\model.py": "a9a5bf12643f92d90d4acd2488fd09acff5629b257d739bb4e98e6d9d1de91ff",
+    "src\\preprocessing.py": "71657ab5b5106008fae24c25aaba692f7a5c166047555cb3814cbd61eebb4ef4",
+    "src\\reporting.py": "c4f4689bef39d14aa5984d4f8773c80c699d6e128ced92b562da4c1dde86c59d",
+    "src\\scaling.py": "5b9c470465926e6e8a5430c89cf583a09421986806eabc801f6cb03c465d9a24",
+    "src\\train.py": "0ea5e70352cc132d6007853aae1d92e8e15636438be4cf618dce801a709692b0",
+    "src\\tuning.py": "36f86109a184c464ba4ad85e4ac7e912b0d756f8d6db1538b4746ebda6ec28d6",
+    "src\\windowing.py": "30054608e0b0401c86001059a9f3e7075c7f10a14c7cd793c0c6308488e8d4e4"
+  },
+  "versions": {
+    "tensorflow": "2.19.1",
+    "numpy": "2.1.3",
+    "sklearn": "1.9.1"
+  },
+  "boundaries": {
+    "fold1": {
+      "start": "2010-09-25 09:03:00",
+      "stop_exclusive": "2010-10-16 05:03:00",
+      "start_row": 1985259,
+      "stop_row_exclusive": 2015259,
+      "first_forecast": "2010-09-28 21:13:00"
+    },
+    "fold2": {
+      "start": "2010-10-16 05:03:00",
+      "stop_exclusive": "2010-11-06 01:03:00",
+      "start_row": 2015259,
+      "stop_row_exclusive": 2045259,
+      "first_forecast": "2010-10-16 07:03:00"
+    },
+    "test": {
+      "start": "2010-11-06 01:03:00",
+      "stop_exclusive": "2010-11-26 21:03:00",
+      "start_row": 2045259,
+      "stop_row_exclusive": 2075259,
+      "first_forecast": "2010-11-06 03:03:00"
+    }
+  },
+  "post_run_maintenance": "After launch: added stricter resume guards, corrected boundary/LR metadata, and added report/inference helper. Training algorithms, completed trials, selection and final predictions unchanged; original launch code hashes retained."
+}

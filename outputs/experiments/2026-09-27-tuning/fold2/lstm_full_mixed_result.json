@@ -1,0 +1,15 @@
+{
+  "model": "lstm_full_mixed",
+  "fold": "fold2",
+  "score_kwh": 0.21726232601651443,
+  "seconds": 141.66547189996345,
+  "parameters": {
+    "name": "lstm_full_mixed",
+    "units": 32,
+    "dropout": 0.1,
+    "learning_rate": 0.0007,
+    "loss": "mixed"
+  },
+  "best_epoch": 24,
+  "parameter_count": 17123
+}
